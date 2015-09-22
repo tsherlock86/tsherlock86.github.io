@@ -36,6 +36,10 @@ h6 {
     font-weight: 700;
 }
 
+#contact {
+  background-image: url();
+}
+
 hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;
@@ -63,7 +67,7 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #18bc9c;
+    /*background-color: #18bc9c;*/
 }
 
 hr.star-primary {
@@ -82,7 +86,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    background-image: url("http://photofiles.alphacoders.com/225/22537.jpg");
 }
 
 header .container {
@@ -176,7 +180,7 @@ section {
 
 section h2 {
     margin: 0;
-    font-size: 3em;
+    /*font-size: 3em;*/
 }
 
 section.success {
@@ -252,6 +256,14 @@ section.success a.active {
 
 #portfolio * {
     z-index: 2;
+}
+
+.resume {
+  padding: 0 !important;
+}
+
+.modal.in .modal-dialog {
+  transform: none;
 }
 
 @media(min-width:767px) {
@@ -456,4 +468,23 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+.iframe-container {
+padding-bottom: 0%;
+padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.iframe-container iframe,
+.iframe-container object,
+.iframe-container embed{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+.modal.in .modal-dialog {
+transform: none; /*translate(0px, 0px);*/
 }
